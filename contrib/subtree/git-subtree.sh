@@ -243,7 +243,7 @@ main () {
 			test -n "$allow_addmerge" || die_incompatible_opt "$opt" "$arg_command"
 			arg_addmerge_squash=
 			;;
-		-S|--gpg-sign|--no-gpg-sign)
+		-S*|--gpg-sign=*|--no-gpg-sign)
 			arg_gpgsign="${opt}"
 			case $1 in
 				-*)
